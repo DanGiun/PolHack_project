@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> Форма заявки для заказа транспортного средства (ТС) </title>
+</head>
+<body>
+<p><div><center> Форма заявки для заказа транспортного средства (ТС) </center></div><Br></p>
+
+<form action="" method="POST">
+   <p> Введите место для вызова ТС <Br></p>
+   <p><input type="text" name="location" size="45"><Br></p>
+
+   <p> Выберите тип необходимого ТС <Br></p>
+   <p><input type="radio" name="transport" value="type1"> Самосвал<Br>
+   <input type="radio" name="transport" value="type2"> Кран<Br>
+   <input type="radio" name="transport" value="type3"> Трактор</p>	
+
+   <p> Введите минимально необходимую грузоподъемность ТС (в тоннах) <Br></p>
+   <p><input type="text" name="weight" size="5"><Br></p>
+
+   <p> Выберите степень необходимости ТС <Br></p>
+   <p><input type="radio" name="alert" value="alert1"> Срочно <Br>
+   <input type="radio" name="alert" value="alert2"> Не очень срочно <Br>
+   <input type="radio" name="alert" value="alert3"> Время есть <Br></p>
+
+   <p> Введите дату, в которую необходимо предоставить ТС (ДД.ММ.ГГГГ) <Br></p>
+   <p><input type="text" name="date" size="10"><Br></p> 
+
+   <p> Введите необходимое время для выполнения работ (в часах) <Br></p>
+   <p><input type="text" name="time" size="5"><Br></p>   
+
+   <button type="submit"> Отправить заявку </button>
+
+</form><Br>
+
+  <form action="my_orders.html" target="_blank">
+   <button> Мои заказы </button>
+  </form><Br>
+
+  <form action="all_orders.html" target="_blank">
+   <button> Все заказы </button>
+  </form><Br>
+
+</body>
+</html>

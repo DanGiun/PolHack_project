@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег input, атрибут type</title>
+ </head>
+ <body>  
+ <p><div><center> Мои заказы </center></div><Br></p>
+  <form action="all_orders.html" target="_blank">
+   <button> Все заказы </button>
+  </form><Br>
+
+
+ </body>
+</html>
