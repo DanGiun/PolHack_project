@@ -7,10 +7,6 @@
 <body>
 <p><div><center> Форма заявки для заказа транспортного средства (ТС) </center></div><Br></p>
 
-<form action="" method="POST">
-   <p> Введите свое ФИО <Br></p>
-   <p><input type="text" name="FIO"><Br></p>
-
    <p> Введите место для вызова ТС <Br></p>
 
    <button id="getlocation"> Ввести геолокацию </button>
@@ -19,7 +15,7 @@
 	const getLocation = document.getElementById("getlocation");
         
         getLocation.addEventListener('click', evt => {
-           if ('' in navigator){
+           if ('geolocation' in navigator){
 	      navigator.geolocation.getCurrentPosition(position => {
 		let latitude = position.coords.latitude;
 		let longitude = position.coords.longitude;
@@ -33,6 +29,10 @@
 	   }
         });
    </script>
+
+<form action="" method="POST">
+   <p> Введите свое ФИО <Br></p>
+   <p><input type="text" name="FIO"><Br></p>
 
    <p> Выберите тип необходимого ТС <Br></p>
    <p><input type="radio" name="transport" value="type1"> Самосвал<Br>
@@ -52,4 +52,4 @@
    <button type="submit"> Отправить заявку </button>
 </form>
 </body>
-</html
+</html>
