@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> Форма заявки для заказа транспортного средства (ТС) </title>
+</head>
+<body>
+<p><div><center> Форма заявки для заказа транспортного средства (ТС) </center></div><Br></p>
+
+<form action="base.php", method="POST">
+   <p> Введите свое ФИО <Br></p>
+   <p><input type="text" name="FIO"><Br></p>
+
+   <p> Введите место для вызова ТС <Br></p>
+   <p><input type="text" name="FIO"><Br></p>
+
+   <p> Выберите тип необходимого ТС <Br></p>
+   <p><input type="radio" name="transport" value="type1"> Самосвал<Br>
+   <input type="radio" name="transport" value="type2"> Кран<Br>
+   <input type="radio" name="transport" value="type3"> Трактор</p>	
+
+   <p> Выберите минимально необходимую грузоподъемность ТС (в тоннах) <Br></p>
+   <p><input type="radio" name="weight" value="w1"> 1т <Br>
+   <input type="radio" name="weight" value="w2"> 2т <Br>
+   <input type="radio" name="weight" value="w3"> 5т </p>
+
+   <p> Выберите степень необходимости ТС <Br></p>
+   <p><input type="radio" name="date" value="date1"> Срочно <Br>
+   <input type="radio" name="date" value="date2"> Не очень срочно <Br>
+   <input type="radio" name="date" value="date3"> Время есть <Br></p>
+
+   <button type="submit"> Отправить заявку </button>
+</form>
+</body>
+</html
