@@ -7,12 +7,32 @@
 <body>
 <p><div><center> Форма заявки для заказа транспортного средства (ТС) </center></div><Br></p>
 
-<form action="base.php", method="POST">
+<form action="" method="POST">
    <p> Введите свое ФИО <Br></p>
    <p><input type="text" name="FIO"><Br></p>
 
    <p> Введите место для вызова ТС <Br></p>
-   <p><input type="text" name="FIO"><Br></p>
+
+   <button id="getlocation"> Ввести геолокацию </button>
+
+   <script>
+	const getLocation = document.getElementById("getlocation");
+        
+        getLocation.addEventListener('click', evt => {
+           if ('' in navigator){
+	      navigator.geolocation.getCurrentPosition(position => {
+		let latitude = position.coords.latitude;
+		let longitude = position.coords.longitude;
+
+		console.log(latitude, longitude);
+	      }, error => {
+		console.log(error.code);
+	      });
+	   }else{
+              console.log("Недоступно");
+	   }
+        });
+   </script>
 
    <p> Выберите тип необходимого ТС <Br></p>
    <p><input type="radio" name="transport" value="type1"> Самосвал<Br>
